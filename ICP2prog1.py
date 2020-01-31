@@ -1,5 +1,5 @@
 def listsc():
-    print("Using List Comprehensions")
+    input("Using List Comprehensions enter number N")
     print("Enter the Weights in lbs:")
     a=input().split()
     e=[round((int(c)/2.2),2) for c in a]
@@ -8,7 +8,7 @@ def listsc():
     return 0
 
 def loops():
-    print("Using Loops")
+    input("Using Loops Enter N")
     print("Enter the weights in lbs:")
     a=input().split()
     b=[]
@@ -19,7 +19,7 @@ def loops():
     return 0
 
 if __name__ =='__main__':
-    a=input("Enter 1 for listcomprehensions 2 for loops:\n")
+    a=input("Enter 1 for listcomprehensions,  2 for loops:\n")
     if a is '1':
         listsc()
     else:

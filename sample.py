@@ -38,5 +38,8 @@ while line!= "":
             d[xStr]=1
     line = infile.readline()
 for key in list(d.keys()):
-    print(key, d[key])
+    print(key,":", d[key])
+outfile=open('output.txt','w')
+outfile.write(str(d))
+outfile.close()
 # print(d)
