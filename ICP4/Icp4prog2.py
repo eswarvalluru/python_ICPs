@@ -3,8 +3,6 @@ from sklearn.metrics import classification_report
 from sklearn.model_selection import train_test_split
 from sklearn.naive_bayes import GaussianNB
 
-
-
 train_df = pd.read_csv('./glass.csv')
 X_train = train_df.drop("Type",axis=1)
 Y_train = train_df["Type"]

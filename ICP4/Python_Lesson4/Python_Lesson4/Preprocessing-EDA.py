@@ -27,7 +27,6 @@ combine = [train_df, test_df]
 ##describing data
 print(train_df.columns.values)
 
-
 train_df.head()
 
 ##what are the data types for features
