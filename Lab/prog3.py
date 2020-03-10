@@ -59,6 +59,7 @@ class Fare(Baggage):                                                            
 
 class Ticket(Passenger, Fare):                                                             #Multiple inheritence
     def __init__(self):
+        # super().__init__()
         print("Passenger name:",Passenger.name)                                            #Acccessing parent class variable
         if Passenger.class_type == "business":
             Fare.total_fare+=100
@@ -71,7 +72,7 @@ class Ticket(Passenger, Fare):                                                  
 f1=Flight('American Airlines',6789)
 f1.flight_display()
 
-e0 = employee('e1', 'e_Eswar', 22, 'M')
+e0 = employee('E1', 'Eswar', 22, 'M')
 e0.e_display()
 
 p1 = Passenger()
